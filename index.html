@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrugMax | Premium Botanical Extracts, Essential Oils & Export Solutions</title>
+    <meta name="description"
+        content="DrugMax Private Limited is a global leader in botanical extracts, essential oils, and pharmaceutical-grade import/export solutions." />
+    <link rel="canonical" href="https://drugmax.in/">
+    <link rel="alternate" hreflang="en" href="https://drugmax.in/" />
+    <link rel="alternate" hreflang="ar" href="https://drugmax.in/ar/" />
+    <link rel="alternate" hreflang="de" href="https://drugmax.in/de/" />
+    <link rel="alternate" hreflang="x-default" href="https://drugmax.in/" />
+    <link rel="icon" type="image/png" href="https://drugmax.in/favicon.png">
+
+    <!-- Social Media Metadata (Open Graph) -->
+    <meta property="og:title" content="DrugMax | Premium Botanical Extracts & Global Export">
+    <meta property="og:description"
+        content="Leading supplier of botanical extracts and essential oils. specialized in B2B import and export transparency and clinical purity.">
+    <meta property="og:image" content="https://drugmax.in/images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drugmax.in/">
+
+    <!-- Twitter Card Context -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DrugMax | Premium Botanical Extracts & Oils">
+    <meta name="twitter:description"
+        content="Bridging clinical excellence with organic purity since 2013. Discover our premium botanicals.">
+    <meta name="twitter:image" content="https://drugmax.in/images/logo.png">
+
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        trust: {
+                            navy: '#0f172a',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            slate: '#94a3b8',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-marquee': 'slideMarquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(40px, -60px) scale(1.1)' },
+                            '66%': { transform: 'translate(-30px, 30px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideMarquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #0f172a;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Utilities - Light Mode */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(15, 23, 42, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: #ffffff;
+            border-color: #2563eb;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
+        }
+
+        /* Gradient Mesh Text - Blue & Navy Theme */
+        .text-gradient {
+            background: linear-gradient(to right, #2563eb, #0ea5e9, #0f172a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        .text-gradient-sky {
+            background: linear-gradient(to right, #0ea5e9, #3b82f6, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 6s linear infinite reverse;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Custom Bullet Points */
+        ul.custom-bullets li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #475569;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        ul.custom-bullets li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+            font-size: 0.8rem;
+        }
+
+        /* Enhanced Parallax & Background Layers - Light Mode */
+        .bg-layer {
+            position: absolute;
+            inset: 0;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.05;
+            filter: grayscale(1) contrast(1.2);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+
+        /* Accessibility: Focus States */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+            border-radius: 0.25rem;
+        }
+
+        .active-nav-link {
+            color: #2563eb !important;
+        }
+
+        .active-nav-link span {
+            width: 100% !important;
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://drugmax.in/#organization",
+          "name": "DrugMax Private Limited",
+          "url": "https://drugmax.in/",
+          "logo": "https://drugmax.in/images/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "#16, 3rd cross, Dr. T.C.M Royan Road",
+            "addressLocality": "Bangalore",
+            "postalCode": "560053",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9000241457",
+            "contactType": "sales",
+            "email": "sales@drugmax.in",
+            "availableLanguage": ["en", "Hindi"]
+          },
+          "sameAs": [
+            "https://wa.me/919000241457"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://drugmax.in/#website",
+          "url": "https://drugmax.in/",
+          "name": "DrugMax | Botanical Extracts & Essential Oils",
+          "description": "Premium B2B supplier of botanical extracts, essential oils, and dehydrated vegetables.",
+          "publisher": {"@id": "https://drugmax.in/#organization"}
+        },
+        {
+          "@type": "ItemList",
+          "name": "Featured Botanical Extracts",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Organic Curcuminoids 95%",
+              "description": "Standardized Turmeric Extract with 95% Curcuminoids for maximum potency."
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Organic Gingerols 5%",
+              "description": "Pure Ginger Extract standardized to 5% Gingerols."
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Dehydrated Essential Oils",
+              "description": "Premium industrial-grade essential oils for pharmaceutical and cosmetic applications."
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Global Import & Export Solutions",
+              "description": "Streamlined pharmaceutical-grade supply chain and logistics for botanical trade."
+            }
+          ]
+        }
+      ]
+    }
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DrugMax",
+      "url": "https://drugmax.in",
+      "logo": "https://drugmax.in/images/logo.png",
+      "sameAs": [
+        "https://wa.me/919000241457"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9000241457",
+        "contactType": "sales",
+        "areaServed": "Global",
+        "availableLanguage": ["English", "Arabic", "German"]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://drugmax.in/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://drugmax.in/blog.html"
+      }]
+    }
+    </script>
+</head>
+
+<body class="antialiased selection:bg-trust-blue selection:text-white">
+    <!-- AI-Search TL;DR (Hidden for UX, Optimized for Crawlers) -->
+    <div class="sr-only" aria-hidden="true">
+        <h2>Executive Summary</h2>
+        <p>DrugMax Private Limited, headquartered in Bangalore, is a premier global B2B supplier and specialist in
+            Botanical Extracts, Essential Oils, and Pharmaceutical-grade Import and Export. Since 2013, we bridge
+            clinical precision with ecological integrity, offering standardized HPLC/GC-MS testing for bulk
+            nutraceutical procurement and global supply chain logistics.</p>
+    </div>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[100] glass hidden flex-col items-center justify-center gap-8 text-2xl font-bold p-10 backdrop-blur-2xl">
+        <button onclick="toggleMenu()"
+            class="absolute top-10 right-10 text-trust-navy hover:text-trust-blue transition-colors"
+            aria-label="Close Menu">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="flex flex-col items-center gap-8">
+            <a href="index.html" class="text-trust-navy hover:text-trust-blue transition-colors"
+                onclick="toggleMenu()">Home</a>
+            <a href="index.html#products" class="text-trust-navy hover:text-trust-blue transition-colors"
+                onclick="toggleMenu()">Products</a>
+            <a href="about.html" class="text-trust-navy hover:text-trust-blue transition-colors"
+                onclick="toggleMenu()">Mission</a>
+            <a href="quality.html" class="text-trust-navy hover:text-trust-blue transition-colors"
+                onclick="toggleMenu()">Quality</a>
+            <a href="blog.html" class="text-trust-navy hover:text-trust-blue transition-colors"
+                onclick="toggleMenu()">Blog</a>
+            <a href="sustainability.html" class="text-trust-navy hover:text-trust-blue transition-colors"
+                onclick="toggleMenu()">Sustainability</a>
+            <a href="quote.html"
+                class="px-8 py-4 bg-trust-blue text-white rounded-full mt-4 shadow-xl active:scale-95 transition-transform"
+                onclick="toggleMenu()">Partner With Us</a>
+
+            <!-- Mobile Language Switcher -->
+            <div
+                class="flex items-center gap-6 pt-8 border-t border-slate-100/20 w-full justify-center text-sm font-bold tracking-widest uppercase mt-4">
+                <span class="text-trust-blue underline decoration-2 underline-offset-8">EN</span>
+                <span class="opacity-30">|</span>
+                <a href="ar/index.html" class="text-trust-navy/60 hover:text-trust-blue transition-colors">العربية</a>
+                <span class="opacity-30">|</span>
+                <a href="de/index.html" class="text-trust-navy/60 hover:text-trust-blue transition-colors">DE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Absolute Background Mesh (Animated Blobs) -->
+    <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
+        <div
+            class="absolute top-0 -left-40 w-[600px] h-[600px] bg-trust-blue rounded-full mix-blend-multiply filter blur-[140px] opacity-10 animate-blob">
+        </div>
+        <div class="absolute top-40 -right-40 w-[500px] h-[500px] bg-trust-sky rounded-full mix-blend-multiply filter blur-[130px] opacity-10 animate-blob"
+            style="animation-delay: 2s;"></div>
+        <div class="absolute -bottom-40 left-20 w-[600px] h-[600px] bg-trust-blue rounded-full mix-blend-multiply filter blur-[150px] opacity-10 animate-blob"
+            style="animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex items-center justify-between glass rounded-2xl px-6 py-4 shadow-2xl">
+                <!-- Logo brand -->
+                <a href="index.html"
+                    class="flex items-center gap-3 cursor-pointer hover:scale-105 transition-transform">
+                    <img src="./images/logo.png" alt="DrugMax Corporate Logo" class="h-10 w-auto">
+                </a>
+
+                <!-- Links -->
+                <div class="hidden md:flex flex-1 justify-center gap-8">
+                    <a href="index.html"
+                        class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group"
+                        data-page="home">
+                        Home
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="index.html#products"
+                        class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group"
+                        data-page="products">
+                        Products
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html"
+                        class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Mission
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="blog.html"
+                        class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Blog
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="quality.html"
+                        class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Quality
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="sustainability.html"
+                        class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Sustainability
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="quote.html"
+                        class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Inquiry
+                        <span
+                            class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button onclick="toggleMenu()"
+                    class="md:hidden text-trust-navy hover:text-trust-blue transition-colors p-2 focus:outline-none"
+                    aria-label="Toggle Menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+
+                <!-- Language Switcher & CTA -->
+                <div class="flex items-center gap-4">
+                    <div
+                        class="hidden sm:flex items-center gap-2 text-[10px] font-bold tracking-widest uppercase text-slate-400 mr-2">
+                        <span class="text-trust-blue">EN</span>
+                        <span class="opacity-30">|</span>
+                        <a href="ar/index.html"
+                            class="hover:text-trust-blue transition-colors cursor-pointer">العربية</a>
+                        <span class="opacity-30">|</span>
+                        <a href="de/index.html" class="hover:text-trust-blue transition-colors cursor-pointer">DE</a>
+                    </div>
+                    <a href="quote.html"
+                        class="relative inline-flex px-6 py-2 font-bold rounded-full overflow-hidden group">
+                        <span
+                            class="absolute inset-0 bg-slate-100 group-hover:bg-transparent transition-colors duration-300"></span>
+                        <span
+                            class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-trust-blue to-trust-sky transition-opacity duration-300"></span>
+                        <span
+                            class="relative text-trust-navy group-hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase">Partner
+                            with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[100vh] flex items-center justify-center pt-24 px-6 overflow-hidden">
+        <!-- Background Image Layer -->
+        <div class="absolute inset-0 -z-10 bg-[url('./images/warehouse.png')] bg-cover bg-center opacity-[0.1]"
+            aria-hidden="true"></div>
+
+        <!-- Background Overlay for Hero -->
+        <div class="absolute inset-0 z-0 bg-slate-50/20">
+            <div class="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white opacity-90"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10" data-aos="zoom-out" data-aos-duration="1500"
+            data-aos-easing="ease-out-cubic">
+
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 border-trust-blue/20 cursor-default hover:border-trust-blue/50 transition-colors">
+                <span class="w-2 h-2 rounded-full bg-trust-blue animate-pulse shadow-[0_0_10px_#2563eb]"></span>
+                <span class="text-sm font-bold tracking-widest uppercase text-trust-blue">Standardized &bull; Pure
+                    &bull; Global</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-tight mb-6 text-trust-navy">
+                Nature's Purity.<br>
+                <span class="text-gradient">Globally Supplied.</span>
+            </h1>
+
+            <p class="text-lg md:text-2xl text-slate-600 font-light max-w-3xl mx-auto mb-12 leading-relaxed"
+                data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                DrugMax Private Limited delivers clinical-grade botanical extracts and essential oils to the world's
+                most demanding pharmaceutical and nutraceutical innovators.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6" data-aos="fade-up"
+                data-aos-delay="600">
+                <a href="#products"
+                    class="px-8 py-4 bg-trust-navy text-white font-bold rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(15,23,42,0.2)] transition-all duration-300 w-full sm:w-auto">
+                    Explore The Catalog
+                </a>
+                <a href="quote.html"
+                    class="px-8 py-4 glass text-trust-navy font-bold rounded-full hover:bg-slate-50 transition-all duration-300 w-full sm:w-auto">
+                    Global Supply &rarr;
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50 transition-opacity hover:opacity-100 cursor-pointer"
+            onclick="window.location.hash='#products'">
+            <span class="text-xs font-bold tracking-widest uppercase text-trust-blue">Scroll</span>
+            <div class="w-px h-12 bg-gradient-to-b from-trust-blue to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Animated Banner Strip -->
+    <div class="w-full bg-gradient-to-r from-trust-blue to-trust-sky text-white py-6 transform -rotate-1 shadow-[0_0_40px_rgba(37,99,235,0.2)] relative z-20 flex overflow-hidden whitespace-nowrap"
+        data-aos="fade-up" data-aos-duration="1000">
+        <div class="flex items-center gap-10 font-bold text-2xl uppercase tracking-wider animate-slide-marquee">
+            <span>&bull; Essential Oils</span>
+            <span>&bull; Turmeric & Curcuminoids</span>
+            <span>&bull; Herbal Extracts</span>
+            <span>&bull; Natural Caffeine</span>
+            <span>&bull; Gymnemic Acids</span>
+            <span>&bull; Boswellic Acids</span>
+            <span>&bull; Polyphenols</span>
+            <span>&bull; Forskolin</span>
+            <span>&bull; Essential Oils</span>
+            <span>&bull; Turmeric & Curcuminoids</span>
+            <span>&bull; Herbal Extracts</span>
+            <span>&bull; Natural Caffeine</span>
+        </div>
+        <!-- Duplicated for seamless loop (inline gap to avoid jump) -->
+        <div class="flex items-center gap-10 font-bold text-2xl uppercase tracking-wider animate-slide-marquee pl-10"
+            aria-hidden="true">
+            <span>&bull; Essential Oils</span>
+            <span>&bull; Turmeric & Curcuminoids</span>
+            <span>&bull; Herbal Extracts</span>
+            <span>&bull; Natural Caffeine</span>
+            <span>&bull; Gymnemic Acids</span>
+            <span>&bull; Boswellic Acids</span>
+            <span>&bull; Polyphenols</span>
+            <span>&bull; Forskolin</span>
+            <span>&bull; Essential Oils</span>
+            <span>&bull; Turmeric & Curcuminoids</span>
+            <span>&bull; Herbal Extracts</span>
+            <span>&bull; Natural Caffeine</span>
+        </div>
+    </div>
+
+    <!-- Product Showcase -->
+    <section id="products" class="py-32 px-6 relative overflow-hidden w-full">
+        <!-- Operational Background: Modern Pharma Warehouse -->
+        <div class="bg-layer" style="background-image: url('./images/warehouse.png'); opacity: 0.08;"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="mb-20 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 text-trust-navy">Our Complete <br><span
+                        class="text-gradient-sky">Product Catalog</span></h2>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg font-light">Meticulously extracted, completely pure.
+                    Explore our comprehensive range of standardized botanical ingredients formulated for excellence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <!-- Category 1: Essential Oils -->
+                <div class="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="100" data-aos-duration="1200">
+                    <div
+                        class="absolute inset-0 -z-10 bg-[url('./images/marigold_extract.png')] bg-cover bg-center opacity-10">
+                    </div>
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-trust-blue/10 rounded-full filter blur-[50px]">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-trust-blue shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M11 20A7 7 0 014 13V5a2 2 0 012-2h5m0 17a7 7 0 007-7V5a2 2 0 00-2-2h-5m0 17V3">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-black text-trust-navy">Essential Oils</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 font-light">100% pure aromatic oils perfectly crafted for health,
+                            wellness, and therapeutic applications.</p>
+
+                        <div class="grid grid-cols-2 gap-x-4">
+                            <ul class="custom-bullets">
+                                <li>Thyme Oil</li>
+                                <li>Oregano Oil</li>
+                                <li>Ajwain Oil</li>
+                                <li>Basil Oil</li>
+                                <li>Boswellia Oil</li>
+                                <li>Cardamom Oil</li>
+                                <li>Cinnamon Oil</li>
+                                <li>Clove Oil</li>
+                                <li>Coriander Oil</li>
+                                <li>Coleus Oil</li>
+                                <li>Ashwagandha Oil</li>
+                            </ul>
+                            <ul class="custom-bullets">
+                                <li>Eucalyptus Oil</li>
+                                <li>Fennel Oil</li>
+                                <li>Lavender Oil</li>
+                                <li>Neem Oil</li>
+                                <li>Marigold Oil</li>
+                                <li>Peppermint Oil</li>
+                                <li>Rosemary Oil</li>
+                                <li>Sage Oil</li>
+                                <li>Annatto Oil</li>
+                                <li>Fish Oil</li>
+                                <li>Camphor Oil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Turmeric & Curcuminoids -->
+                <div class="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden lg:mt-16" data-aos="fade-up"
+                    data-aos-delay="300" data-aos-duration="1200">
+                    <div
+                        class="absolute inset-0 -z-10 bg-[url('./images/turmeric_extract.png')] bg-cover bg-center opacity-10">
+                    </div>
+                    <div class="absolute bottom-0 right-0 w-40 h-40 bg-trust-sky/10 rounded-full filter blur-[50px]">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-trust-sky shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-black text-trust-navy">Turmeric & Curcuminoids</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 font-light">Highly standardized golden extracts crafted via strict
+                            HPLC & Ethanol/Ethyl Acetate processes.</p>
+
+                        <ul class="custom-bullets space-y-3">
+                            <li><span class="text-trust-navy font-bold">Turmeric Extract Powder</span> - Curcuminoids
+                                95% by HPLC (Ethyl Acetate/Ethanol)</li>
+                            <li><span class="text-trust-navy font-bold">Turmeric Extract (Granules)</span> -
+                                Curcuminoids 95% by HPLC</li>
+                            <li><span class="text-trust-navy font-bold">Turmeric Extract Powder (WD)</span> -
+                                Curcuminoids 5% to 30% by HPLC</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 3: Metabolic & Energy Botanicals -->
+                <div class="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="200" data-aos-duration="1200">
+                    <div
+                        class="absolute inset-0 -z-10 bg-[url('./images/green_coffee_extract.png')] bg-cover bg-center opacity-10">
+                    </div>
+                    <div
+                        class="absolute top-1/2 left-0 w-40 h-40 bg-trust-blue/10 rounded-full filter blur-[50px] -translate-y-1/2">
+                    </div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-trust-blue shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-black text-trust-navy">Metabolic & Energy Extracts</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 font-light">Potent natural extracts fueling metabolic health,
+                            thermogenesis, and vitality.</p>
+
+                        <div class="space-y-5">
+                            <div>
+                                <h4 class="text-trust-navy font-bold mb-2">Green Tea & Coffee</h4>
+                                <ul class="custom-bullets">
+                                    <li>Green tea Extract up to 80% Polyphenols, EGCG 40% HPLC</li>
+                                    <li>Green tea Extract EGCG 40% HPLC / 90% EGCG</li>
+                                    <li>Green Tea Extract 95% Caffeine</li>
+                                    <li>Coffee Bean Ext. - Chlorogenic Acids 45%-50% (Robusta/Arabica)</li>
+                                    <li>Coffee Bean Extract - Natural Caffeine 99% by HPLC</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-trust-navy font-bold mb-2">Garcinia & Coleus</h4>
+                                <ul class="custom-bullets">
+                                    <li>Garcinia Ext. - Calcium salt / Water soluble 50%-70% HPLC</li>
+                                    <li>Garcinia Ext. - Granules Calcium salt 55%-65% HPLC</li>
+                                    <li>Coleus Forskohlii Ext. - Forskolin 10%-40% / 95%-98% HPLC</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-trust-navy font-bold mb-2">Ginger, Cocoa & Others</h4>
+                                <ul class="custom-bullets">
+                                    <li>Ginger Extract powder (Gingerols 5%-12%) / Oleoresin (15%-40%)</li>
+                                    <li>Cocoa polyphenol 15% (UV) / theobromine 10% (HPLC)</li>
+                                    <li>Capsacin 40% | Bromelain 1200 to 2400 GDU</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Standardized Herbal Extracts -->
+                <div class="glass-card rounded-[2rem] p-8 md:p-12 relative overflow-hidden lg:mt-16" data-aos="fade-up"
+                    data-aos-delay="400" data-aos-duration="1200">
+                    <div
+                        class="absolute inset-0 -z-10 bg-[url('./images/gymnema_extract.png')] bg-cover bg-center opacity-10">
+                    </div>
+                    <div class="absolute top-0 left-0 w-60 h-60 bg-trust-sky/10 rounded-full filter blur-[60px]"></div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-full glass flex items-center justify-center text-trust-sky shadow-sm">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-3xl font-black text-trust-navy">Standardized Herbal Extracts</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 font-light">Exceptional quality clinical-tier standardized
+                            Ayurvedic and traditional extracts.</p>
+
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-trust-navy font-bold mb-1">Boswellia Serrata Extract</h4>
+                                <ul class="custom-bullets">
+                                    <li>Boswellic Acids 30% to 80% (Titrimetry) / up to 20% (HPLC)</li>
+                                    <li>AKBBA 10% to 60% by HPLC</li>
+                                    <li>Granules: AKBBA 10%-80% HPLC / Boswellic Acids 20%-70% (Titrimetry) / 80% & 85%
+                                        (HPLC)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-trust-navy font-bold mb-1">Gymnema & Bacopa</h4>
+                                <ul class="custom-bullets">
+                                    <li>Gymnema - Gymnemic Acids 25%-75% Gravimetry / 25% HPLC</li>
+                                    <li>Bacopa - Bacosides 20%-50% HPLC / 20%-40% Gravimetry</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-trust-navy font-bold mb-1">Ashwagandha & Others</h4>
+                                <ul class="custom-bullets">
+                                    <li>Ashwagandha - Withanolides 1.5%-5% HPLC / 2.5%-10% Grav.</li>
+                                    <li>Shilajith Extract 20% to 60% Fulvic acid</li>
+                                    <li>Banaba Extract - Corosolic Acid 1% to 20% by HPLC</li>
+                                    <li>Berberine Hydrochloride 95%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Operational Scale Break: Global Logistics Hub -->
+    <section class="py-48 relative overflow-hidden bg-slate-50">
+        <div class="bg-layer" style="background-image: url('./images/logistics.png'); opacity: 0.05;"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 px-6" data-aos="fade-up">
+            <h2 class="text-4xl md:text-6xl font-black mb-8 text-trust-navy">Global Scale. <br><span
+                    class="text-gradient">Seamless Logistics.</span></h2>
+            <p class="text-slate-600 text-lg font-light leading-relaxed">DrugMax operates with the infrastructure needed
+                for global-scale supply. From our massive temperature-controlled warehousing to our streamlined export
+                hubs, we ensure your bulk ingredients are moved with professional precision and documented speed.</p>
+        </div>
+    </section>
+
+    <!-- Footer / Connect Engine -->
+    <footer id="quote" class="py-32 px-6 relative z-10 overflow-hidden bg-slate-50">
+        <!-- Operational Detail: Controlled Storage -->
+        <div class="bg-layer" style="background-image: url('./images/storage.png'); opacity: 0.1;"></div>
+
+        <div class="max-w-6xl mx-auto text-center glass-card rounded-[3rem] p-10 md:p-24 border border-trust-blue/10 relative overflow-hidden"
+            data-aos="zoom-in" data-aos-duration="1500">
+            <!-- Glow inside footer -->
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-trust-blue/5 via-transparent to-transparent opacity-80 z-0 pointer-events-none">
+            </div>
+
+            <div class="relative z-10 w-full">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-trust-blue/5 border border-trust-blue/10 mb-8 cursor-default">
+                    <span class="text-xs font-bold tracking-widest uppercase text-trust-blue">Ready to elevate your
+                        formulations?</span>
+                </div>
+
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-tight text-trust-navy">Secure
+                    Global <br><span class="text-transparent border-text">Bulk Supply.</span></h2>
+
+                <style>
+                    .border-text {
+                        color: transparent;
+                        -webkit-text-stroke: 2px rgba(15, 23, 42, 0.2);
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+
+                    .border-text:hover {
+                        -webkit-text-stroke: 2px #2563eb;
+                        text-shadow: 0 0 30px rgba(37, 99, 235, 0.2);
+                    }
+                </style>
+
+                <p class="text-xl text-slate-500 font-light mb-12 max-w-2xl mx-auto leading-relaxed">Turn to DrugMax for
+                    industry-leading standards, vast capacities, and pure excellence. Reach out to our B2B sales team
+                    today.</p>
+
+                <!-- Minimal Action Area -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:sales@drugmax.in"
+                        class="px-10 py-5 bg-trust-navy text-white font-bold rounded-full hover:scale-105 hover:shadow-[0_20px_40px_rgba(15,23,42,0.2)] transition-all duration-300 text-lg w-full sm:w-auto flex justify-center items-center gap-2">
+                        <span>Email Us</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="quote.html"
+                        class="px-10 py-5 glass text-trust-navy border-trust-blue/20 font-bold rounded-full hover:bg-white transition-all duration-300 text-lg w-full sm:w-auto">
+                        Inquiry Form
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="mt-16 text-center text-slate-500 text-sm font-light relative z-10 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-4 md:mb-0">
+                <img src="./images/logo.png" alt="DrugMax Corporate Logo"
+                    class="h-8 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
+                <p>&copy; 2026 DrugMax Private Limited. All Rights Reserved. &bull; <span class="font-bold">Last
+                        Updated: APR 2026</span></p>
+            </div>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="about.html" class="hover:text-trust-blue transition-colors">Our Story</a>
+                <a href="quality.html" class="hover:text-trust-blue transition-colors">Quality Standards</a>
+                <a href="sustainability.html" class="hover:text-trust-blue transition-colors">Sustainability</a>
+                <a href="privacy.html" class="hover:text-trust-blue transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init({
+                once: false,
+                offset: 80,
+                duration: 900,
+                easing: 'ease-out-quart'
+            });
+        });
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Navbar Glass Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            const glass = nav.querySelector('.glass');
+            if (window.scrollY > 60) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-6');
+                glass.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-2');
+                glass.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+            }
+        });
+
+        // Navigation Scroll-Spy Logic
+        const navLinks = document.querySelectorAll('.nav-link');
+        const updateNav = (activeId) => {
+            navLinks.forEach(link => {
+                if (link.dataset.page === activeId) {
+                    link.classList.add('active-nav-link');
+                } else {
+                    link.classList.remove('active-nav-link');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    updateNav(entry.target.id === 'home' ? 'home' : (entry.target.id || 'home'));
+                }
+            });
+        }, { threshold: 0.4 });
+
+        ['home', 'products'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
+        window.addEventListener('hashchange', () => {
+            if (window.location.hash === '#products') updateNav('products');
+        });
+    </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919000241457" target="_blank" rel="noopener noreferrer"
+        class="fixed bottom-8 right-8 z-[100] group" aria-label="Chat on WhatsApp">
+        <div
+            class="absolute inset-0 bg-emerald-500 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-opacity animate-pulse">
+        </div>
+        <div
+            class="relative flex items-center justify-center w-16 h-16 bg-emerald-500 text-white rounded-full shadow-2xl transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-[360deg] cursor-pointer border-4 border-white">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+        </div>
+    </a>
+</body>
+
+</html>

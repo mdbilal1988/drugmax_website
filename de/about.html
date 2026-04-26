@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere Geschichte & Mission | DrugMax - Experten für botanischen Export</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <meta name="description" content="Erfahren Sie mehr über die Entwicklung von DrugMax in den Bereichen botanische Extrakte, ätherische Öle und globale Import-/Exportlogistik." />
+    <link rel="canonical" href="https://drugmax.in/de/about.html">
+    <link rel="alternate" hreflang="en" href="https://drugmax.in/about.html" />
+    <link rel="alternate" hreflang="ar" href="https://drugmax.in/ar/about.html" />
+    <link rel="alternate" hreflang="de" href="https://drugmax.in/de/about.html" />
+    <link rel="alternate" hreflang="x-default" href="https://drugmax.in/about.html" />
+    
+    <!-- Social Media Metadata (Open Graph) -->
+    <meta property="og:title" content="Unsere Geschichte & Mission | DrugMax - Globaler Exportführer">
+    <meta property="og:description" content="Entdecken Sie unsere Reise von Bangalore zum Weltmarktführer in der botanischen Extraktion.">
+    <meta property="og:image" content="https://drugmax.in/images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drugmax.in/de/about.html">
+    
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        trust: {
+                            navy: '#0f172a',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            slate: '#94a3b8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #ffffff; color: #0f172a; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(15, 23, 42, 0.1); }
+        .text-gradient { background: linear-gradient(to right, #2563eb, #0ea5e9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(15, 23, 42, 0.05); transition: all 0.4s ease; }
+    </style>
+</head>
+<body class="antialiased selection:bg-trust-blue selection:text-white">
+    <!-- Mobile Menu Overlay DE -->
+    <div id="mobile-menu" class="fixed inset-0 z-[100] glass hidden flex-col items-center justify-center gap-8 text-2xl font-bold p-10 backdrop-blur-2xl">
+        <button onclick="toggleMenu()" class="absolute top-10 right-10 text-trust-navy hover:text-trust-blue transition-colors" aria-label="Menü schließen">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="flex flex-col items-center gap-8">
+            <a href="index.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Startseite</a>
+            <a href="about.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Über Uns</a>
+            <a href="quality.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Qualität</a>
+            <a href="sustainability.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Nachhaltigkeit</a>
+            <a href="quote.html" class="px-8 py-4 bg-trust-blue text-white rounded-full mt-4 shadow-xl active:scale-95 transition-transform" onclick="toggleMenu()">Angebot</a>
+            
+            <!-- Mobile Language Switcher (DE Active) -->
+            <div class="flex items-center gap-6 pt-8 border-t border-slate-100/20 w-full justify-center text-sm font-bold tracking-widest uppercase mt-4">
+                <a href="../about.html" class="text-trust-navy/60 hover:text-trust-blue transition-colors">EN</a>
+                <span class="opacity-30">|</span>
+                <a href="../ar/about.html" class="text-trust-navy/60 hover:text-trust-blue transition-colors">العربية</a>
+                <span class="opacity-30">|</span>
+                <span class="text-trust-blue underline decoration-2 underline-offset-8">DE</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex items-center justify-between glass rounded-2xl px-6 py-4 shadow-2xl">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../images/logo.png" alt="DrugMax Logo" class="h-10 w-auto">
+                </a>
+                
+                <!-- Links (Desktop) -->
+                <div class="hidden md:flex flex-1 justify-center gap-8">
+                    <a href="index.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue relative group">
+                        Startseite
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-xs font-bold tracking-widest uppercase text-trust-blue relative group">
+                        Über Uns
+                        <span class="absolute -bottom-2 left-0 w-full h-0.5 bg-trust-blue"></span>
+                    </a>
+                    <a href="quality.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue relative group">
+                        Qualität
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="sustainability.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue relative group">
+                        Nachhaltigkeit
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMenu()" class="md:hidden text-trust-navy hover:text-trust-blue transition-colors outline-none" aria-label="Menü öffnen">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+                
+                <div class="flex items-center gap-4">
+                    <div class="hidden sm:flex items-center gap-2 text-[10px] font-bold tracking-widest uppercase text-slate-400 mr-2">
+                        <a href="../about.html" class="hover:text-trust-blue transition-colors cursor-pointer">EN</a>
+                        <span class="opacity-30">|</span>
+                        <a href="../ar/about.html" class="hover:text-trust-blue transition-colors cursor-pointer">العربية</a>
+                        <span class="opacity-30">|</span>
+                        <span class="text-trust-blue">DE</span>
+                    </div>
+                    <a href="quote.html" class="relative inline-flex px-6 py-2 font-bold rounded-full overflow-hidden group">
+                        <span class="absolute inset-0 bg-slate-100 group-hover:bg-transparent transition-colors"></span>
+                        <span class="relative text-[10px] tracking-widest uppercase text-trust-navy group-hover:text-trust-blue">Angebot</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+ 
+    <header class="relative min-h-[60vh] flex items-center justify-center pt-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-[url('../images/lab.png')] bg-cover bg-center opacity-[0.08]" aria-hidden="true"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="fade-up">
+            <span class="inline-block px-4 py-1.5 rounded-full glass border border-trust-blue/30 text-trust-blue text-xs font-bold tracking-widest uppercase mb-6">
+                Unsere Identität
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-trust-navy">
+                Die Verbindung von Forschung und <span class="text-gradient">Ethik</span>
+            </h1>
+            <p class="text-slate-600 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                DrugMax wurde auf dem Prinzip der absoluten Transparenz gegründet. Wir beliefern die Welt mit Pflanzenstoffen in pharmazeutischer Qualität.
+            </p>
+        </div>
+    </header>
+ 
+    <main class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-extrabold text-trust-navy mb-8">Das Herz unserer Mission</h2>
+                <div class="space-y-6 text-slate-500 font-light leading-relaxed">
+                    <p>DrugMax Private Limited ist kein gewöhnlicher Exporteur. Wir sind Technologen und Visionäre, die die Art und Weise, wie die Welt botanische Extrakte wahrnimmt, verändern wollen.</p>
+                    <p>Vom Herzen Bangalores aus haben wir ein Netzwerk aufgebaut, das Kontinente überspannt. Unsere Mission ist es, Reinheit in industriellem Maßstab ohne Kompromisse bei der Ethik zu liefern.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <div class="text-4xl font-black text-trust-blue mb-2">12+</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-slate-400">Länder</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <div class="text-4xl font-black text-trust-blue mb-2">100%</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-slate-400">Reinheit</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <div class="text-4xl font-black text-trust-blue mb-2">24h</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-slate-400">Support</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl text-center">
+                    <div class="text-4xl font-black text-trust-blue mb-2">PHARMA</div>
+                    <div class="text-[10px] uppercase font-bold tracking-widest text-slate-400">Qualität</div>
+                </div>
+            </div>
+        </div>
+    </main>
+ 
+    <footer class="py-20 px-10 glass border-t border-slate-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2 space-y-8">
+                <img src="../images/logo.png" alt="DrugMax Logo" class="h-12 w-auto">
+                <p class="text-slate-500 font-light max-w-md">DrugMax Private Limited liefert erstklassige botanische Extrakte und raffinierte Öle an den Weltmarkt und setzt neue Standards in Qualität und Transparenz.</p>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-bold uppercase tracking-widest text-xs text-trust-navy">Navigation</h4>
+                <ul class="space-y-4 text-sm text-slate-500 font-light">
+                    <li><a href="index.html" class="hover:text-trust-blue transition-colors">Startseite</a></li>
+                    <li><a href="quality.html" class="hover:text-trust-blue transition-colors">Garantie</a></li>
+                    <li><a href="sustainability.html" class="hover:text-trust-blue transition-colors">Nachhaltigkeit</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h4 class="font-bold uppercase tracking-widest text-xs text-trust-navy">Kontakt</h4>
+                <p class="text-sm text-slate-500 font-light leading-relaxed">
+                    #16, 3rd cross, Dr. T.C.M Royan Road,<br>
+                    Bangalore 560053<br><br>
+                    <a href="mailto:info@drugmax.in" class="text-trust-blue font-bold">info@drugmax.in</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 1000 });
+        let lastScroll = 0;
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll <= 0) { navbar.classList.remove('-translate-y-full'); return; }
+            if (currentScroll > lastScroll) { navbar.classList.add('-translate-y-full'); }
+            else { navbar.classList.remove('-translate-y-full'); }
+            lastScroll = currentScroll;
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        }
+    </script>
+</body>
+</html>

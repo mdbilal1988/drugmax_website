@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | DrugMax Private Limited</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Read the DrugMax Privacy Policy. Learn how we handle your business data, inquiry details, and pharmaceutical-grade security standards." />
+    <link rel="canonical" href="https://drugmax.in/privacy.html">
+    
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        trust: {
+                            navy: '#0f172a',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            slate: '#94a3b8',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-marquee': 'slideMarquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(40px, -60px) scale(1.1)' },
+                            '66%': { transform: 'translate(-30px, 30px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        slideMarquee: {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #ffffff; color: #0f172a; overflow-x: hidden; }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #2563eb, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Accessibility: Focus States */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+            border-radius: 0.25rem;
+        }
+            .active-nav-link {
+            color: #2563eb !important;
+        }
+        .active-nav-link span {
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-trust-blue selection:text-white">
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[100] glass hidden flex-col items-center justify-center gap-8 text-2xl font-bold p-10 backdrop-blur-2xl">
+        <button onclick="toggleMenu()" class="absolute top-10 right-10 text-trust-navy hover:text-trust-blue transition-colors" aria-label="Close Menu">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="flex flex-col items-center gap-8">
+            <a href="index.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Home</a>
+            <a href="index.html#products" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Products</a>
+            <a href="about.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Mission</a>
+            <a href="blog.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Blog</a>
+            <a href="quality.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Quality</a>
+            <a href="sustainability.html" class="text-trust-navy hover:text-trust-blue transition-colors" onclick="toggleMenu()">Sustainability</a>
+            <a href="quote.html" class="px-8 py-4 bg-trust-blue text-white rounded-full mt-4 shadow-xl active:scale-95 transition-transform" onclick="toggleMenu()">Partner With Us</a>
+        </div>
+    </div>
+
+    <!-- Background Blobs -->
+    <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 -left-40 w-[600px] h-[600px] bg-trust-blue rounded-full mix-blend-multiply filter blur-[140px] opacity-10 animate-blob"></div>
+        <div class="absolute bottom-40 -right-40 w-[500px] h-[500px] bg-trust-sky rounded-full mix-blend-multiply filter blur-[130px] opacity-10 animate-blob" style="animation-delay: 2s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex items-center justify-between glass rounded-2xl px-6 py-4 shadow-2xl">
+                <!-- Logo brand -->
+                <a href="index.html" class="flex items-center gap-3 cursor-pointer hover:scale-105 transition-transform">
+                    <img src="./images/logo.png" alt="DrugMax Corporate Logo" class="h-10 w-auto">
+                </a>
+                
+                <!-- Links -->
+                <div class="hidden md:flex flex-1 justify-center gap-8">
+                    <a href="index.html" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Home
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="index.html#products" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group" data-page="products">
+                        Products
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Mission
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="blog.html" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Blog
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="quality.html" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Quality
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="sustainability.html" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Sustainability
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="quote.html" class="nav-link text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Inquiry
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+                
+                                <!-- Mobile Toggle -->
+                <button onclick="toggleMenu()" class="md:hidden text-trust-navy hover:text-trust-blue transition-colors p-2 focus:outline-none" aria-label="Toggle Menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+                
+                <!-- CTA -->
+                <div>
+                    <a href="quote.html" class="relative inline-flex px-6 py-2 font-bold rounded-full overflow-hidden group">
+                        <span class="absolute inset-0 bg-slate-100 group-hover:bg-transparent transition-colors duration-300"></span>
+                        <span class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-trust-blue to-trust-sky transition-opacity duration-300"></span>
+                        <span class="relative text-trust-navy group-hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase">Partner with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-40 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-[url('./images/logistics.png')] bg-cover bg-center opacity-[0.08]" aria-hidden="true"></div>
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-black mb-12 text-trust-navy">Privacy <span class="text-gradient">Policy</span></h1>
+            
+            <div class="glass p-10 md:p-16 rounded-[3rem] border border-slate-100 shadow-xl space-y-10 text-slate-600 font-light leading-relaxed">
+                <div>
+                    <h2 class="text-2xl font-bold text-trust-navy mb-4">1. Data Collection</h2>
+                    <p>We collect information you provide directly to us through forms on our website, including but not limited to bulk inquiry details. This may include your name, business email, and company credentials.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-trust-navy mb-4">2. Use of Information</h2>
+                    <p>Your data is used exclusively for B2B procurement processing, quality assurance verification, and logistics coordination. We do not sell user data to third-party marketing entities.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-trust-navy mb-4">3. Security Standards</h2>
+                    <p>We implement pharmaceutical-grade data security measures to protect your confidential batch numbers and business inquiries from unauthorized access, loss, or alteration.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-trust-navy mb-4">4. Contact Information</h2>
+                    <p>For legal inquiries, please contact our data protection team at <a href="mailto:hello@drugmax.in" class="text-trust-blue hover:underline font-bold">hello@drugmax.in</a>.</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center text-slate-400 text-xs tracking-widest uppercase font-bold">
+                DrugMax Private Limited &bull; Last Updated: JAN 2026
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-10 glass border-t border-slate-100 shadow-inner mt-20 relative z-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-left">
+            <div class="col-span-1 md:col-span-2 space-y-8">
+                <img src="./images/logo.png" alt="DrugMax Corporate Logo" class="h-12 w-auto">
+                <p class="text-slate-500 font-light max-w-md">DrugMax Private Limited delivers premium botanical extracts and refined oils to a global marketplace, setting new benchmarks in quality and transparency.</p>
+            </div>
+            
+            <div class="space-y-6">
+                <h4 class="text-trust-blue font-bold tracking-widest text-xs uppercase">Navigation</h4>
+                <div class="flex flex-col gap-4 text-sm text-slate-500 font-light">
+                    <a href="index.html" class="hover:text-trust-blue transition-all">Home</a>
+                    <a href="about.html" class="hover:text-trust-blue transition-all">Our Story</a>
+                    <a href="quality.html" class="hover:text-trust-blue transition-all">Quality Standards</a>
+                    <a href="blog.html" class="hover:text-trust-blue transition-all">Blog</a>
+                    <a href="sustainability.html" class="hover:text-trust-blue transition-all">Sustainability</a>
+                    <a href="quote.html" class="hover:text-trust-blue transition-all text-trust-blue font-bold text-xs uppercase tracking-widest">Inquiry Form</a>
+                </div>
+            </div>
+            
+            <div class="space-y-6">
+                <h4 class="text-trust-sky font-bold tracking-widest text-xs uppercase">Legal</h4>
+                <div class="flex flex-col gap-4 text-sm text-slate-500 font-light">
+                    <a href="privacy.html" class="hover:text-trust-blue transition-all underline decoration-trust-blue/30 decoration-2">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-trust-blue transition-all">Terms of Service</a>
+                </div>
+            </div>
+            
+            <div class="col-span-1 md:col-span-4 pt-12 border-t border-slate-100 text-center text-xs text-slate-400 font-bold tracking-widest uppercase">
+                &copy; 2026 DRUGMAX PRIVATE LIMITED. ALL RIGHTS RESERVED. &bull; LAST UPDATED: APR 2026
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Navbar Glass Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            const glass = nav.querySelector('.glass');
+            if(window.scrollY > 60) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-6');
+                glass.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-2');
+                glass.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+            }
+        });
+
+        // Navigation Path Highlighting
+        const updateActiveLink = () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const normalize = (p) => p.replace('.html', '').replace(/\/$/, '').split('/').pop() || 'index';
+            const currentPath = normalize(window.location.pathname);
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                const linkPath = normalize(linkHref.split('#')[0]);
+                const linkHash = linkHref.includes('#') ? '#' + linkHref.split('#')[1] : '';
+
+                link.classList.remove('active-nav-link');
+                if (linkPath === currentPath && !linkHash) {
+                    link.classList.add('active-nav-link');
+                }
+            });
+        };
+        document.addEventListener('DOMContentLoaded', updateActiveLink);
+    </script>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919000241457" target="_blank" rel="noopener noreferrer" class="fixed bottom-8 right-8 z-[100] group" aria-label="Chat on WhatsApp">
+        <div class="absolute inset-0 bg-emerald-500 rounded-full blur-xl opacity-20 group-hover:opacity-40 transition-opacity animate-pulse"></div>
+        <div class="relative flex items-center justify-center w-16 h-16 bg-emerald-500 text-white rounded-full shadow-2xl transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-[360deg] cursor-pointer border-4 border-white">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </div>
+    </a>
+</body>
+</html>

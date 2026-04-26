@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights & Innovation | DrugMax Blog - Botanical Science & Global Export</title>
+    <meta name="description"
+        content="Deep dives into botanical extraction, clinical purity standards, and global pharmaceutical export trends from the experts at DrugMax." />
+    <link rel="canonical" href="https://drugmax.in/blog.html">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Social Media Metadata -->
+    <meta property="og:title" content="Insights & Innovation | DrugMax Blog">
+    <meta property="og:description" content="Exploring the frontier of botanical science and global supply chain excellence.">
+    <meta property="og:image" content="https://drugmax.in/images/logo.png">
+    <meta property="og:type" content="website">
+
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        trust: {
+                            navy: '#0f172a',
+                            blue: '#2563eb',
+                            sky: '#0ea5e9',
+                            slate: '#94a3b8',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 10s infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(40px, -60px) scale(1.1)' },
+                            '66%': { transform: 'translate(-30px, 30px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #0f172a;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(15, 23, 42, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(15, 23, 42, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            background: #ffffff;
+            border-color: #2563eb;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.1);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #2563eb, #0ea5e9, #0f172a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .bg-layer {
+            position: absolute;
+            inset: 0;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.05;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "DrugMax Botanical & Science Blog",
+      "description": "Expert insights into botanical extracts, quality testing, and nutraceutical trends.",
+      "url": "https://drugmax.in/blog.html"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://drugmax.in/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://drugmax.in/blog.html"
+      }]
+    }]
+    </script>
+</head>
+
+<body class="antialiased selection:bg-trust-blue selection:text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex items-center justify-between glass rounded-2xl px-6 py-4 shadow-2xl">
+                <a href="index.html" class="flex items-center gap-3 cursor-pointer hover:scale-105 transition-transform">
+                    <img src="./images/logo.png" alt="DrugMax Corporate Logo" class="h-10 w-auto">
+                </a>
+
+                <div class="hidden md:flex flex-1 justify-center gap-8">
+                    <a href="index.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Home
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="index.html#products" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Products
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="blog.html" class="text-xs font-bold tracking-widest uppercase text-trust-blue relative group">
+                        Blog
+                        <span class="absolute -bottom-2 left-0 w-full h-0.5 bg-trust-blue transition-all"></span>
+                    </a>
+                    <a href="about.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Mission
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="quality.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Quality
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="quote.html" class="text-xs font-bold tracking-widest uppercase text-slate-600 hover:text-trust-blue transition-colors relative group">
+                        Inquiry
+                        <span class="absolute -bottom-2 left-0 w-0 h-0.5 bg-trust-blue transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <a href="quote.html" class="relative inline-flex px-6 py-2 font-bold rounded-full overflow-hidden group">
+                        <span class="absolute inset-0 bg-slate-100 group-hover:bg-transparent transition-colors duration-300"></span>
+                        <span class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-r from-trust-blue to-trust-sky transition-opacity duration-300"></span>
+                        <span class="relative text-trust-navy group-hover:text-white transition-colors duration-300 text-sm tracking-widest uppercase">Partner with us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-48 pb-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-[url('./images/lab.png')] bg-cover bg-center opacity-[0.05]" aria-hidden="true"></div>
+        
+        <!-- Blobs -->
+        <div class="absolute top-0 -left-40 w-[600px] h-[600px] bg-trust-blue rounded-full mix-blend-multiply filter blur-[140px] opacity-10 animate-blob"></div>
+        <div class="absolute top-40 -right-40 w-[500px] h-[500px] bg-trust-sky rounded-full mix-blend-multiply filter blur-[130px] opacity-10 animate-blob" style="animation-delay: 2s;"></div>
+
+        <div class="max-w-7xl mx-auto" data-aos="fade-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 border-trust-blue/20">
+                <span class="w-2 h-2 rounded-full bg-trust-blue animate-pulse shadow-[0_0_10px_#2563eb]"></span>
+                <span class="text-sm font-bold tracking-widest uppercase text-trust-blue">Insights & Innovation</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 text-trust-navy">
+                Exploring The Frontier of<br>
+                <span class="text-gradient">Botanical Science.</span>
+            </h1>
+            <p class="text-xl text-slate-600 font-light max-w-2xl leading-relaxed">
+                Expert analysis on extraction technology, market trends, and clinical-grade purity in the global nutraceutical industry.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Container -->
+    <section class="pb-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Featured Post -->
+            <div class="mb-20" data-aos="fade-up">
+                <div class="glass-card rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row min-h-[500px]">
+                    <div class="lg:w-1/2 relative overflow-hidden group">
+                        <img src="./images/lab.png" alt="Featured Article" class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-trust-navy/20"></div>
+                    </div>
+                    <div class="lg:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="px-3 py-1 rounded-full bg-trust-blue/10 text-trust-blue text-xs font-bold uppercase tracking-wider">Clinical Purity</span>
+                            <span class="text-slate-400 text-xs font-bold uppercase tracking-wider">April 25, 2026</span>
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-black text-trust-navy mb-6 tracking-tight leading-tight hover:text-trust-blue transition-colors cursor-pointer">
+                            Standardizing Gold: The Future of HPLC Testing in Curcuminoids
+                        </h2>
+                        <p class="text-slate-600 text-lg font-light mb-8 leading-relaxed">
+                            How advancements in high-performance liquid chromatography are redefining purity standards for Turmeric extracts in the global pharmaceutical market.
+                        </p>
+                        <a href="blog/standardizing-hplc-testing.html" class="inline-flex items-center gap-2 font-bold text-trust-blue group">
+                            Read Full Insight 
+                            <svg class="w-5 h-5 transform transition-transform group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Post 1 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="./images/warehouse.png" alt="Sustainability" class="absolute inset-0 h-full w-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Sustainability</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">April 18, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Regenerative Farming: Securing the Future of Botanical Supply
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            Exploring how DrugMax partners with local farms to implement sustainable soil health practices...
+                        </p>
+                        <a href="blog/regenerative-farming-botanicals.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 relative overflow-hidden bg-trust-navy/5 flex items-center justify-center">
+                        <div class="bg-layer" style="background-image: url('./images/logistics.png'); opacity: 0.15;"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Logistics</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">April 12, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Navigating Global Export: 5 Key Regulatory Changes in 2026
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            A breakdown of the latest FDA and EMA guideline updates for botanical extract importers...
+                        </p>
+                        <a href="blog/regulatory-changes-2026.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="./images/storage.png" alt="Innovation" class="absolute inset-0 h-full w-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Innovation</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">April 05, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Supercritical CO2 vs Solvent Extraction: Which is Better for Purity?
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            An analytical comparison of extraction methodologies for manufacturing high-potence essential oils...
+                        </p>
+                        <a href="#" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 4 (New) -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 relative overflow-hidden bg-trust-navy/5 flex items-center justify-center">
+                        <div class="bg-layer" style="background-image: url('./images/lab.png'); opacity: 0.15;"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Product Science</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">May 02, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            The Science of Ashwagandha: Beyond the Root
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            Why withanolide concentration and clinical-grade extraction are defining the wellness market...
+                        </p>
+                        <a href="blog/ashwagandha-standardization-science.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="./images/storage.png" alt="Rosemary" class="absolute inset-0 h-full w-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Clean Label</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">April 28, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Rosemary Extract: The Natural Solution for Clean Labels
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            Why Carnosic Acid is replacing synthetic antioxidants in the global food and beauty sectors...
+                        </p>
+                        <a href="blog/rosemary-extract-natural-preservation.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="./images/marigold_extract.png" alt="Essential Oils" class="absolute inset-0 h-full w-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Analytical Accuracy</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">May 10, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Beyond Aroma: The Molecular Purity of Essential Oils
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            How GC-MS analysis is protecting B2B supply chains from adulteration...
+                        </p>
+                        <a href="blog/essential-oils-purity-gcms.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 7 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 relative overflow-hidden bg-trust-navy/5 flex items-center justify-center">
+                        <div class="bg-layer" style="background-image: url('./images/green_coffee_extract.png'); opacity: 0.15;"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Metabolic Science</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">May 15, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            The Metabolic Engine: Harnessing Power of EGCG
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            Why standardized Green Tea extracts are no longer optional for high-performance nutrition...
+                        </p>
+                        <a href="blog/green-tea-extract-egcg-science.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 8 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 relative overflow-hidden bg-trust-navy/5 flex items-center justify-center">
+                        <div class="bg-layer" style="background-image: url('./images/gymnema_extract.png'); opacity: 0.15;"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Joint Health</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">May 20, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Beyond Traditional Relief: The Rise of 30% AKBBA Extracts
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            Why pharmaceutical-grade Boswellia Serrata is becoming the primary choice for natural inflammatory management...
+                        </p>
+                        <a href="blog/boswellia-akbba-joint-health.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- Post 9 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 relative overflow-hidden bg-trust-navy/5 flex items-center justify-center">
+                        <div class="bg-layer" style="background-image: url('./images/green_coffee_extract.png'); opacity: 0.15;"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Thermogenic Science</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">May 25, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Natural Weight Management: The Metabolic Trifecta
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            How Garcinia, Ginger, and Green Coffee extracts are revolutionizing the non-stimulant market...
+                        </p>
+                        <a href="blog/natural-weight-management-science.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 10 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 relative overflow-hidden bg-trust-navy/5 flex items-center justify-center">
+                        <div class="bg-layer" style="background-image: url('./images/gymnema_extract.png'); opacity: 0.15;"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Neuro-Science</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">June 01, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            The Cognitive Frontier: Bacosides & Fulvic Acid
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            How standardized Ayurvedic extracts are leading the global surge in nootropic performance...
+                        </p>
+                        <a href="blog/cognitive-health-nootropics-science.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Post 11 -->
+                <div class="glass-card rounded-[2rem] overflow-hidden flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 relative overflow-hidden">
+                        <img src="./images/marigold_extract.png" alt="Vision & Longevity" class="absolute inset-0 h-full w-full object-cover opacity-80">
+                        <div class="absolute bottom-4 left-4">
+                            <span class="px-3 py-1 rounded-full glass text-trust-navy text-[10px] font-bold uppercase tracking-widest shadow-sm">Longevity Science</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-1 flex-col">
+                        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">June 05, 2026</p>
+                        <h3 class="text-2xl font-black text-trust-navy mb-4 leading-snug hover:text-trust-blue transition-colors cursor-pointer">
+                            Vision & Longevity: The Integrative Frontier
+                        </h3>
+                        <p class="text-slate-500 font-light text-sm mb-6 flex-1">
+                            Analyzing the molecular impact of Lutein, Berberine, and Ginkgo on the aging body...
+                        </p>
+                        <a href="blog/vision-longevity-botanical-science.html" class="text-trust-blue font-bold text-sm inline-flex items-center gap-1 group">
+                            Read More <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination/More -->
+            <div class="mt-20 text-center" data-aos="fade-up">
+                <button class="px-10 py-5 glass text-trust-navy font-bold rounded-full hover:bg-slate-50 transition-all duration-300">
+                    Load More Insights
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 bg-slate-50 relative overflow-hidden">
+        <div class="bg-layer" style="background-image: url('./images/storage.png'); opacity: 0.05;"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-slate-200 pt-10">
+                <div class="flex items-center gap-4 mb-8 md:mb-0">
+                    <img src="./images/logo.png" alt="DrugMax Logo" class="h-8 w-auto">
+                    <p class="text-slate-500 text-sm font-light">© 2026 DrugMax Private Limited. All Rights Reserved.</p>
+                </div>
+                <div class="flex gap-8">
+                    <a href="privacy.html" class="text-slate-400 hover:text-trust-blue text-xs font-bold uppercase tracking-widest">Privacy</a>
+                    <a href="terms.html" class="text-slate-400 hover:text-trust-blue text-xs font-bold uppercase tracking-widest">Terms</a>
+                    <a href="quote.html" class="text-slate-400 hover:text-trust-blue text-xs font-bold uppercase tracking-widest">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true });
+        
+        // Navbar scroll effect
+        window.onscroll = function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('px-4', 'pt-2');
+            } else {
+                nav.classList.remove('px-4', 'pt-2');
+            }
+        };
+    </script>
+</body>
+</html>
